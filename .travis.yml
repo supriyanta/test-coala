@@ -1,37 +1,3 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Marketplace
-    Explore
-
-    @supriyanta
-
-15
-144
-
-    370
-
-coala/coala-bears
-Code
-Issues 449
-Pull requests 106
-Projects 1
-Insights
-coala-bears/.travis.yml
-e448909 on Jun 23
-@jayvdb jayvdb .travis.yml: Use Python 3.6.1
-@jayvdb
-@yash-nisar
-@satwikkansal
-@abhsag24
-@SarthakNijhawan
-@nemaniarjun
-@AbdealiJK
-@Monal5031
-144 lines (132 sloc) 3.94 KB
 sudo: required
 
 language: python
@@ -173,20 +139,4 @@ notifications:
 
 branches:
   exclude:
-    - /^sils\//
-
-    © 2017 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Help
-
-    Contact GitHub
-    API
-    Training
-    Shop
-    Blog
-    About
-
-
+- /^sils\//
