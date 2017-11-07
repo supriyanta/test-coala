@@ -4,7 +4,6 @@
 bears = FilenameBear
 files = **.cpp, **.yml
 ignore = 
-default_actions = *:ApplyPatchActions
 [c++]
 bears = GNUIndentBear, CPPCheckBear
 files = **.cpp
