@@ -1,11 +1,14 @@
-language: cpp
-compiler: gcc
-os: linux
-env: UNIT_TESTS=true COMPILER=g++-6     BOOST_VERSION=default ENABLE_MEMCHECK=true
+language: python
+python:
+  - "3.6"
+env:
+  GOPATH: $HOME/go
+  PATH: $GOPATH/bin:$PATH
 
 install:
- - sudo apt-get update
- - pip install coala-bears
- - cd $TRAVIS_BUILD_DIR
+  - sudo apt-get update
+  - pip install coala-bears
+  - cd $TRAVIS_BUILD_DIR
+
 script:
- - coala --ci
+  - coala --ci
