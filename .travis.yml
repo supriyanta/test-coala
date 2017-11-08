@@ -1,17 +1,19 @@
 language: 
-  - python
   - cpp
-python:
-  - "3.6"
-env:
-  GOPATH: $HOME/go
-  PATH: $GOPATH/bin:$PATH
+install:
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-4.8
+    - g++-4.8
 
 install:
   - sudo apt-get update
   - pip install coala
   - pip install coala-bears
-  - cd $TRAVIS_BUILD_DIR
 
 script:
   - coala --ci
