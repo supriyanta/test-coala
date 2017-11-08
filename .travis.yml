@@ -1,4 +1,4 @@
-language: python
+language: python, cpp
 python:
   - "3.6"
 env:
